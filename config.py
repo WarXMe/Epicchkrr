@@ -4,7 +4,7 @@ config.py — Epic Checker Bot settings
 import os
 
 # ── Telegram ──────────────────────────────────────────────────────────────────
-BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "9175570180:AAGEpXv5VEFMpGaueQjqbR86ilhBsvNuo0E")
 
 # ── Threading ─────────────────────────────────────────────────────────────────
 THREADS     = 40
