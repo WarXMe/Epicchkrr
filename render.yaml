@@ -1,0 +1,11 @@
+services:
+  - type: worker                  # background worker — no HTTP port needed for polling bot
+    name: epic-checker-bot
+    runtime: python
+    region: oregon                # free tier region
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TG_BOT_TOKEN
+        sync: false               # you set this manually in Render dashboard → no value exposed in git
